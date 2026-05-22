@@ -3,6 +3,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ResetButton from "@/app/components/ui/resetButton";
 import GoButton from "@/app/components/ui/goButton";
+import {
+  saveToStorage,
+  loadFromStorage,
+  removeFromStorage,
+} from "@/utils/storage";
 
 const getFontSize = (value) => {
   const len = String(value).length;
